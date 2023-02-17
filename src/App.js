@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import React from 'react';
+import {MdLocationOn} from 'react-icons/md';
+
+
+  export default function Nav(props){
+    return(<div className="contain">
+   <a href={props.navs.location} className="side"><img className="image" src={props.navs.image} alt /></a>
+    <div className="detail">
+    <div className="detail-1">
+    <div ><MdLocationOn className="detail-1-1"/>{props.navs.country}</div>
+    <a href={props.navs.link} className="side">View on Google Maps </a>
     </div>
-  );
-}
-
-export default App;
+    <h1 className="detail-2">{props.navs.names}</h1>
+    <p className="detail-4">{props.navs.date}</p>
+    <p className="detail-3">{props.navs.paragraph}</p>
+    </div>
+    <hr className="line"/>
+    </div>
+    )
+  }

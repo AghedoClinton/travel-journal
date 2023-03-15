@@ -4,3 +4,4 @@
 - This project is a personal traviling journel
 
 Note: To run the project type "npm start" in terminal.
+https://github.com/AghedoClinton/travel-journal-React.js-.git
